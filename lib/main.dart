@@ -111,6 +111,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
                 Expanded(
                   child: TextField(
                     controller: _controller,
+                    onSubmitted: (_) => _addTodo(), 
                     decoration: InputDecoration(
                       hintText: 'Add a new todo...',
                       border: OutlineInputBorder(
